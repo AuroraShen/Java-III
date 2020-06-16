@@ -29,16 +29,15 @@ public class HashTable<K extends Comparable<K>, V> implements HashTableADT<K, V>
 		private HashNode next;      // Reference to the next node
 		
 		/**
-    	 * This is a private constructor of the HashNode inner class.
-    	 * 
-    	 * @param K where is the type for key
-    	 * @param V where is the type for value
-    	 */
-        private HashNode(K key, V value) {
-        	this.key = key ;
-        	this.value = value;
-        }
-		
+    	 	* This is a private constructor of the HashNode inner class.
+    	 	* 
+    		 * @param K where is the type for key
+    	 	* @param V where is the type for value
+    	 	*/
+        	private HashNode(K key, V value) {
+        		this.key = key ;
+        		this.value = value;
+		}
 	}
 	
 	private ArrayList<HashNode> buckets;  //the array to store hashes 
@@ -56,7 +55,6 @@ public class HashTable<K extends Comparable<K>, V> implements HashTableADT<K, V>
 		buckets = new ArrayList<HashNode>();
 		for(int i = 0; i < numBuckets; i++)
         	buckets.add(null);
-        
 	}
 	 
 	/**
@@ -73,10 +71,7 @@ public class HashTable<K extends Comparable<K>, V> implements HashTableADT<K, V>
 		buckets = new ArrayList<HashNode>();
 		for(int i = 0; i < numBuckets; i++)
         	buckets.add(null);
-        
 	}
-
-
 
     /**
      * This method returns the load factor threshold that was      
@@ -132,7 +127,6 @@ public class HashTable<K extends Comparable<K>, V> implements HashTableADT<K, V>
     public int getCollisionResolution() {
     	return 5;
     }
-    
     
     /**
      * This method insert and add the key,value pair to the data structure and 
