@@ -1,18 +1,6 @@
 /**
- * Filename:   MyProfiler.java
- * Project:    p3b-201901     
- * Authors:    Ruoxi Shen
- * Leture:     004
- *
- * Semester:   Spring 2019
- * Course:     CS400
- * 
- * Due Date:   3/28/2019
- * Version:    1.0
- * 
- * Credits:    N/A
- * 
- * Bugs:       N/A
+ * Filename:   MyProfiler.java   
+ * Authors:    rshen27@wisc.edu
  */
 
 // Used as the data structure to test our hash table against
@@ -22,7 +10,7 @@ import java.util.TreeMap;
  * The MyProfiler class is to analyze the performance of the hash table 
  * against Java's built-in TreeMap. In this class, each method performs
  * the same operations on both HashTable class and Java's TreeMap class.
- * @author Shen
+ * @author shen
  *
  * @param <K>
  * @param <V>
