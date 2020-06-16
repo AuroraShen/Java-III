@@ -6,7 +6,6 @@
 //
 /////////////////////////////// 80 COLUMNS WIDE ///////////////////////////////
 
-
 /**
  * This is the AVL tree class that extends BST<K,V> class.
  * This class will do AVL rotations.
