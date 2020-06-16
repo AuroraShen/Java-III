@@ -1,23 +1,8 @@
-//////////////////// ALL ASSIGNMENTS INCLUDE THIS SECTION /////////////////////
+/////////////////////////////// 80 COLUMNS WIDE ///////////////////////////////
 //
 // Title:           BST and Balanced Search Tree AVL
-// Course:          Comp Sci 400
-// Leture:          004
-// Due date:        2/24/2019
-// Author:          Ruoxi Shen
-// Email:           rshen27@wisc.edu
+// Author:          rshen27@wisc.edu
 // Lecturer's Name: Andrew L KUEMMEL
-//
-///////////////////////////// CREDIT OUTSIDE HELP /////////////////////////////
-//
-// Students who get help from sources other than their partner must fully 
-// acknowledge and credit those sources of help here.  Instructors and TAs do 
-// not need to be credited here, but tutors, friends, relatives, room mates, 
-// strangers, and others do.  If you received no outside help from either type
-//  of source, then please explicitly indicate NONE.
-//
-// Persons:         N/A
-// Online Sources:  N/A
 //
 /////////////////////////////// 80 COLUMNS WIDE ///////////////////////////////
 
@@ -404,24 +389,4 @@ public class BSTTest extends DataStructureADTTest {
 				}
 		
 	}
-	
-	
-	// TODO: Add your own tests
-	
-	// Add tests to make sure that get and remove work as expected.
-	// Does the height of the tree reflect it's actual and its expected height?
-	// Use the traversal orders to check.
-	
-	// Can you insert many and still "get" them back out?
-	
-	// Does delete work?  
-	// When the key is a leaf?  node with one left child?
-	// node with one right child?  node with two children?
-	
-	// Write replacement value did you choose? 
-	// in-order precessor?  in-order successor?
-	// How can you test if it is replaced correctly?
-	
-
-
 }
