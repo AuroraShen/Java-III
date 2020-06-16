@@ -1,9 +1,9 @@
 /////////////////////////////// 80 COLUMNS WIDE /////////////////////////////// 
 //
 // Title:           Data Structure 
-// Author:          Ruoxi Shen
-// Email:           rshen2793@wisc.edu
+// Author:          rshen27@wisc.edu
 // Lecturer's Name: Andy Kuemmel
+//
 /////////////////////////////// 80 COLUMNS WIDE /////////////////////////////// 
 	
 /**
