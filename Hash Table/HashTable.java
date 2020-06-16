@@ -1,36 +1,11 @@
-//////////////////// ALL ASSIGNMENTS INCLUDE THIS SECTION /////////////////////
+//////////////////////////////// 80 COLUMNS WIDE ///////////////////////////////
 //
-// Title:           HashTable
-// Course:          Comp Sci 400
-// Leture:          004
-// Due date:        3/14/2019
-// Author:          Ruoxi Shen
-// Email:           rshen27@wisc.edu
+// Title:           Hash Table
+// Author:          rshen27@wisc.edu
 // Lecturer's Name: Andrew L KUEMMEL
-//
-///////////////////////////// CREDIT OUTSIDE HELP /////////////////////////////
-//
-// Students who get help from sources other than their partner must fully 
-// acknowledge and credit those sources of help here.  Instructors and TAs do 
-// not need to be credited here, but tutors, friends, relatives, room mates, 
-// strangers, and others do.  If you received no outside help from either type
-//  of source, then please explicitly indicate NONE.
-//
-// Persons:         N/A
-// Online Sources:  N/A
 //
 /////////////////////////////// 80 COLUMNS WIDE ///////////////////////////////
 
-
-// TODO: describe the collision resolution scheme you have chosen
-// identify your scheme as open addressing or bucket
-//
-// TODO: explain your hashing algorithm here 
-// NOTE: you are not required to design your own algorithm for hashing,
-//       since you do not know the type for K,
-//       you must use the hashCode provided by the <K key> object
-//       and one of the techniques presented in lecture
-//
 import java.util.ArrayList;
 
 /**
@@ -49,8 +24,8 @@ public class HashTable<K extends Comparable<K>, V> implements HashTableADT<K, V>
 	 * key and value as a hash node in the data structure.
 	 */
 	private class HashNode{
-		private K  key;      // An instance field to store the key
-		private V value;    // An instance field to store the value
+		private K  key;             // An instance field to store the key
+		private V value;            // An instance field to store the value
 		private HashNode next;      // Reference to the next node
 		
 		/**
@@ -333,17 +308,15 @@ public class HashTable<K extends Comparable<K>, V> implements HashTableADT<K, V>
     	for(int i = 0; i< newnumBuckets; i++)
     		buckets.add(null);
     	
-    	//rehasing
+    	// rehashing
     	for( int j = 0; j < Old.size() ; j++) {
     		HashNode head = Old.get(j);  // get the node from old buckets
     		
     		while(head != null) {
     			//insertHelper(head.key, head.value, buckets);
     			head = head.next;
-    		
-    	}
-    	
-    }
+		}
+	}
     }
 }
     
