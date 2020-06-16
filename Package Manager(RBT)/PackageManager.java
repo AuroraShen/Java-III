@@ -1,21 +1,10 @@
-//////////////////// ALL ASSIGNMENTS INCLUDE THIS SECTION /////////////////////
+/////////////////////////////// 80 COLUMNS WIDE /////////////////////////////// 
 //
-// Title:           p4 - PacjageManager
-// Filename:        PackageManager.java
-// Course:          Comp Sci 400
-// Lecture:         004
-// Due date:        4/19/2019
-// Author:          Ruoxi Shen
-// Email:           rshen27@wisc.edu
-// Lecturer's Name: Andrew L KUEMMEL
+// Title:           Package Manager
+// Author:          rshen27@wisc.edu
+// Lecturer's Name: Andy Kuemmel
 //
-///////////////////////////// CREDIT OUTSIDE HELP /////////////////////////////
-//
-// Persons:         N/A
-// Online Sources:  N/A
-// Known bugs:      N/A
-//
-/////////////////////////////// 80 COLUMNS WIDE ///////////////////////////////
+/////////////////////////////// 80 COLUMNS WIDE /////////////////////////////// 
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
