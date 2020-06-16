@@ -1,21 +1,10 @@
-//////////////////// ALL ASSIGNMENTS INCLUDE THIS SECTION /////////////////////
+/////////////////////////////// 80 COLUMNS WIDE /////////////////////////////// 
 //
-// Title:           p4 - PacjageManager
-// Filename:        Graph.java
-// Course:          Comp Sci 400
-// Lecture:         004
-// Due date:        4/19/2019
-// Author:          Ruoxi Shen
-// Email:           rshen27@wisc.edu
-// Lecturer's Name: Andrew L KUEMMEL
+// Title:           Package Manager
+// Author:          rshen27@wisc.edu
+// Lecturer's Name: Andy Kuemmel
 //
-///////////////////////////// CREDIT OUTSIDE HELP /////////////////////////////
-//
-// Persons:         N/A
-// Online Sources:  N/A
-// Known bugs:      N/A
-//
-/////////////////////////////// 80 COLUMNS WIDE ///////////////////////////////
+/////////////////////////////// 80 COLUMNS WIDE /////////////////////////////// 
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -28,7 +17,7 @@ import java.util.Set;
  * The Graph class implement the directed and unweighed graph.
  * It also perform many operations of the graph.
  * 
- * @author Shen
+ * @author shen
  */
 public class Graph implements GraphADT {
 	
@@ -59,7 +48,8 @@ public class Graph implements GraphADT {
 	private boolean hasVertex(String vertex) {
 		return myMap.containsKey(vertex);
 	}
-	/**
+	
+     /**
      * Add new vertex to the graph.
      *
      * If vertex is null or already exists,
@@ -72,17 +62,16 @@ public class Graph implements GraphADT {
      * 
      * @param vertex the vertex to be added
      */
-	public void addVertex(String vertex) {
-		if(vertex == null || hasVertex(vertex) == true)
-			return;
-		else {
-			this.myMap.put(vertex, new HashSet<>());
-			this.numVertices++;
-		}
-			
-	}
+     public void addVertex(String vertex) {
+	     if(vertex == null || hasVertex(vertex) == true)
+		return;
+	     else {
+		this.myMap.put(vertex, new HashSet<>());
+		this.numVertices++;
+	     }
+     }
 
-	/**
+     /**
      * Remove a vertex and all associated 
      * edges from the graph.
      * 
@@ -96,23 +85,21 @@ public class Graph implements GraphADT {
      *  
      * @param vertex the vertex to be removed
      */
-	public void removeVertex(String vertex) {
-		if(vertex == null || !hasVertex(vertex))
-			return;
-		else {
-			this.myMap.remove(vertex);
-			
-			//remove self-edge vertex
-			for(Map.Entry<String,HashSet<String>> entry : myMap.entrySet()) {
-				if(entry.getValue().contains(vertex)) 
-					myMap.get(entry.getKey()).remove(vertex);
-			}
-			this.numVertices--;
+     public void removeVertex(String vertex) {
+	     if(vertex == null || !hasVertex(vertex))
+		return;
+	     else {
+		this.myMap.remove(vertex);
+		//remove self-edge vertex
+		for(Map.Entry<String,HashSet<String>> entry : myMap.entrySet()) {
+			if(entry.getValue().contains(vertex)) 					
+				myMap.get(entry.getKey()).remove(vertex);
 		}
-		
-	}
+		this.numVertices--;
+	}		
+     }
 
-	/**
+     /**
      * Add the edge from vertex1 to vertex2
      * to this graph. (edge is directed and unweighed)
      * If either vertex does not exist, 
@@ -165,43 +152,43 @@ public class Graph implements GraphADT {
      * @param vertex1 the first vertex
      * @param vertex2 the second vertex
      */	
-	public void removeEdge(String vertex1, String vertex2) {
-		//return if Vertices are null key
-		if(vertex1 == null || vertex2 == null)
+     public void removeEdge(String vertex1, String vertex2) {
+	     //return if Vertices are null key
+	     if(vertex1 == null || vertex2 == null)
+		return;
+	     //if the map contains vertex1
+	     else if(myMap.containsKey(vertex1)) {
+		//return if the map not contains vertex2
+		if(!myMap.containsKey(vertex2))
 			return;
-		//if the map contains vertex1
-		else if(myMap.containsKey(vertex1)) {
-			//return if the map not contains vertex2
-			if(!myMap.containsKey(vertex2))
-				return;
-			//if contains vertex2
-			else{
-				//remove the edge if the edge exists
-				if(myMap.get(vertex1).contains(vertex2)) {
-					myMap.get(vertex1).remove(vertex2);
-				    this.numEdges--;
-				}
-				//return if edge not exists
-				else
-					return;
+		//if contains vertex2
+		else{
+			//remove the edge if the edge exists
+			if(myMap.get(vertex1).contains(vertex2)) {
+				myMap.get(vertex1).remove(vertex2);
+			    this.numEdges--;
 			}
+			//return if edge not exists
+			else
+				return;
 		}
-		//return if not contains vertex1
-		else
-			return;
-	}
+	     }
+	     //return if not contains vertex1
+	     else
+		return;
+     }
 
-	/**
+     /**
      * Returns a Set that contains all the vertices
      * 
      * @return a Set<String> which contains all the vertices in the graph
      */
-	public Set<String> getAllVertices() {
-		Set<String> set = new HashSet<String>(myMap.keySet());
-		return set;
-	}
+     public Set<String> getAllVertices() {
+	     Set<String> set = new HashSet<String>(myMap.keySet());
+	     return set;
+     }
 
-	/**
+     /**
      * Get all the neighbor (adjacent-dependencies) of a vertex
      * 
      * 4/9 Clarification of getAdjacentVerticesOf method: 
@@ -215,25 +202,25 @@ public class Graph implements GraphADT {
      * @param vertex the specified vertex
      * @return an List<String> of all the adjacent vertices for specified vertex
      */
-	public List<String> getAdjacentVerticesOf(String vertex) {
-		List<String> list = new ArrayList<String>(myMap.get(vertex));
-		return list;
-	}
+     public List<String> getAdjacentVerticesOf(String vertex) {
+	     List<String> list = new ArrayList<String>(myMap.get(vertex));
+	     return list;
+     }
 	
-	/**
+     /**
      * Returns the number of edges in this graph.
      * @return number of edges in the graph.
      */
-    public int size() {
-        return this.numEdges;
-    }
+     public int size() {
+	     return this.numEdges;
+     }
 
 
     /**
      * Returns the number of vertices in this graph.
      * @return number of vertices in graph.
      */
-	public int order() {
-        return this.numVertices;
-    }
+     public int order() {
+	     return this.numVertices;
+     }
 }
