@@ -1,23 +1,8 @@
-//////////////////// ALL ASSIGNMENTS INCLUDE THIS SECTION /////////////////////
+/////////////////////////////// 80 COLUMNS WIDE ///////////////////////////////
 //
 // Title:           BST and Balanced Search Tree AVL
-// Course:          Comp Sci 400
-// Leture:          004
-// Due date:        2/24/2019
-// Author:          Ruoxi Shen
-// Email:           rshen27@wisc.edu
+// Author:          rshen27@wisc.edu
 // Lecturer's Name: Andrew L KUEMMEL
-//
-///////////////////////////// CREDIT OUTSIDE HELP /////////////////////////////
-//
-// Students who get help from sources other than their partner must fully 
-// acknowledge and credit those sources of help here.  Instructors and TAs do 
-// not need to be credited here, but tutors, friends, relatives, room mates, 
-// strangers, and others do.  If you received no outside help from either type
-//  of source, then please explicitly indicate NONE.
-//
-// Persons:         N/A
-// Online Sources:  N/A
 //
 /////////////////////////////// 80 COLUMNS WIDE ///////////////////////////////
 
