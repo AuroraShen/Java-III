@@ -1,23 +1,8 @@
-//////////////////// ALL ASSIGNMENTS INCLUDE THIS SECTION /////////////////////
+/////////////////////////////// 80 COLUMNS WIDE ///////////////////////////////
 //
 // Title:           BST and Balanced Search Tree AVL
-// Course:          Comp Sci 400
-// Leture:          004
-// Due date:        2/24/2019
-// Author:          Ruoxi Shen
-// Email:           rshen27@wisc.edu
+// Author:          rshen27@wisc.edu
 // Lecturer's Name: Andrew L KUEMMEL
-//
-///////////////////////////// CREDIT OUTSIDE HELP /////////////////////////////
-//
-// Students who get help from sources other than their partner must fully 
-// acknowledge and credit those sources of help here.  Instructors and TAs do 
-// not need to be credited here, but tutors, friends, relatives, room mates, 
-// strangers, and others do.  If you received no outside help from either type
-//  of source, then please explicitly indicate NONE.
-//
-// Persons:         N/A
-// Online Sources:  N/A
 //
 /////////////////////////////// 80 COLUMNS WIDE ///////////////////////////////
 
@@ -109,61 +94,4 @@ public class AVLTest extends BSTTest {
 			fail( "Unexpected exception AVL 000: "+e.getMessage() );
 		}
 	}
-
-	/** 
-	 * Insert three values in reverse sorted order and then check 
-	 * the root, left, and right keys to see if rebalancing 
-	 * occurred in the other direction.
-	 */
-	@Test
-	void testAVL_002_insert_reversed_sorted_order_simple() {
-		
-		// TODO: implement this test
-		
-	}
-
-	/** 
-	 * Insert three values so that a right-left rotation is
-	 * needed to fix the balance.
-	 * 
-	 * Example: 10-30-20
-	 * 
-	 * Then check the root, left, and right keys to see if rebalancing 
-	 * occurred in the other direction.
-	 */
-	@Test
-	void testAVL_003_insert_smallest_largest_middle_order_simple() {
-		
-		// TODO: implement this test
-		
-	}
-
-	/** 
-	 * Insert three values so that a left-right rotation is
-	 * needed to fix the balance.
-	 * 
-	 * Example: 30-10-20
-	 * 
-	 * Then check the root, left, and right keys to see if rebalancing 
-	 * occurred in the other direction.
-	 */
-	@Test
-	void testAVL_003_insert_largest_smallest_middle_order_simple() {
-		
-		// TODO: implement this test
-		
-	}
-	
-	
-	// TODO: Add your own tests
-	
-	// Add tests to make sure that rebalancing occurs even if the 
-	// tree is larger.   Does it maintain it's balance?
-	// Does the height of the tree reflect it's actual height
-	// Use the traversal orders to check.
-	
-	// Can you insert many and still "get" them back out?
-	
-	// Does delete work?  Does the tree maintain balance when a key is deleted?
-
 }
