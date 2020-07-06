@@ -151,8 +151,4 @@ public class AVL<K extends Comparable<K>,V> extends BST<K, V> {
 			recursivePrintSideways(current.left, indent + "    ");
 		}
 	}
-
-
-
-
 }
